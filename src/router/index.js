@@ -8,12 +8,12 @@ const routes = [
     component: Home,
   },
   {
-    path: '/rechenspiel',
+    path: '/fabi/rechenspiel',
     name: 'Game',
     component: () => import(/* webpackChunkName: "views" */ '../views/Game.vue'),
   },
   {
-    path: '/:id',
+    path: '/fabi/:id',
     name: 'Nummer',
 
     component: () => import(/* webpackChunkName: "views" */ '../views/Number.vue'),
