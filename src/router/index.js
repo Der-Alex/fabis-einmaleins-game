@@ -1,19 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    redirect: '/1',
   },
   {
-    path: '/fabi/rechenspiel',
+    path: '/rechenspiel',
     name: 'Game',
     component: () => import(/* webpackChunkName: "views" */ '../views/Game.vue'),
   },
   {
-    path: '/fabi/:id',
+    path: '/:id',
     name: 'Nummer',
 
     component: () => import(/* webpackChunkName: "views" */ '../views/Number.vue'),

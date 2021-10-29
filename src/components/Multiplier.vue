@@ -35,7 +35,7 @@ span {
   padding: 0 0.25rem;
 }
 .calc {
-  width: 4rem;
+  width: 5rem;
 }
 .res {
   width: 1.75rem;

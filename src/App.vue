@@ -1,11 +1,11 @@
 <template>
   <div id="nav">
     <span>Die 1x1 Reihen: </span>
-    <router-link v-for="num in numbers" :key="num" :to="'/' + num">
+    <router-link v-for="num in numbers" :key="num" :to="'/fabi/' + num">
       {{ num }}
     </router-link>
   </div>
-  <router-link to="/rechenspiel">Rechenspiel</router-link>
+  <router-link to="/fabi/rechenspiel">Rechenspiel</router-link>
   <main>
     <router-view />
   </main>
